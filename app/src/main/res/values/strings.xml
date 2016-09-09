@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">你最棒(仿美团)</string>
+    <string name="name2">密码</string>
+    <string name="name3">登录</string>
+    <string name="name4">注册</string>
+    <string name="name5">忘记密码？</string>
+    <string name="name6">用户名/邮箱/手机号</string>
+    <string name="string_name">._@0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="string_password">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_mei_tuan">#18C5B4</color>
+    <color name="common_mei_tuan_choose">#dfdfdf</color>
+    <color name="common_mei_tuan_price1">#c6c6c9</color>
+    <color name="common_mei_tuan_p">#ffffff</color>
+    <color name="common_mei_tuan_p1">#d67b3a</color>
+    <color name="common_mei_tuan_p2">#f4f4f4</color>
+    <color name="common_mei_tuan_choose_city">#328b72</color>
+    <color name="mei_tuan_my_id_1">#23A094</color>
+    <color name="mei_tuan_my_id">#25A89B</color>
+    <color name="mei_tuan_wire">#dedede</color>
+    <color name="mei_tuan_word">#8b8b8b</color>
+    <color name="tab_bar_text_on">#05C1AE</color>
+    <color name="tab_bar_text_off">#565655</color>
+    <color name="mei_tuan_shop">#16C5B3</color>
+
+</resources>

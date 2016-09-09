@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/search_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/favorable_button"
+            android:padding="10dp"
+            android:src="@drawable/food_ic_actionbar_back" />
+
+        <TextView
+            android:id="@+id/search_txt_brn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/favorable_button"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+            android:text="搜索"
+            android:textSize="@dimen/size3" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/search_txt_brn"
+            android:layout_toRightOf="@id/search_img_back"
+            android:background="@drawable/bg_btn_movie_top_movielist_normal">
+
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_action_search" />
+
+            <ImageView
+                android:id="@+id/search_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bg_btn_movie_top_movielist_normal"/>
+
+            <EditText
+                android:id="@+id/search_edit_tet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:inputType="text"
+                android:layout_toLeftOf="@id/search_delete"
+                android:layout_toRightOf="@id/search_img"
+                android:hint="输入商家、分类或商圈"
+                android:textSize="@dimen/size3"
+                android:background="@null" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_mei_tuan_price1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="热门搜索" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/mei_tuan_wire" />
+
+    <GridView
+        android:id="@+id/search_grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mei_tuan_wire"
+        android:numColumns="3"
+        android:horizontalSpacing="1px"
+        android:verticalSpacing="1px" />
+</LinearLayout>

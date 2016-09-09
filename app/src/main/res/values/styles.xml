@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="NotitleActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyToolBarToolButtonOverflow</item>
+    </style>
+
+    <style name="NotitleTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置menu菜单不遮挡toolbar-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--配置Menu的图标-->
+        <item name="actionOverflowButtonStyle">@style/MyToolBarToolButtonOverflow</item>
+    </style>
+
+    <style name="MyToolBarToolButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_action_search</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--把该属性改为false即可使menu位置位于toolbar之下-->
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="MyToolBarPopmenuStytle" parent="Base.Widget.AppCompat.Light.PopupMenu">
+        <!-- <item name="android:drawableLeft">@android:drawable/ic_menu_share</item>-->
+        <!-- 设置Menu菜单的字体大小-->
+        <item name="android:textSize">18sp</item>
+        <!-- 设置Menu菜单的字体色-->
+        <item name="android:textColorPrimary">@android:color/background_dark</item>
+        <!-- 设置Menu菜单的背景色-->
+        <item name="android:itemBackground">@android:color/white</item>
+    </style>
+
+</resources>

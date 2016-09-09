@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"
+            android:text="我的"
+            android:textSize="@dimen/my_size" />
+
+        <ImageView
+            android:id="@+id/remind_brn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/favorable_button"
+            android:padding="9dp"
+            android:src="@drawable/group_actionbar_message_icon" />
+
+        <ImageView
+            android:id="@+id/set_brn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/remind_brn"
+            android:background="@drawable/favorable_button"
+            android:padding="10dp"
+            android:src="@drawable/group_icon_settings" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_mei_tuan_p2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/my_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_mei_tuan">
+
+                <ImageView
+                    android:id="@+id/id_brn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/travel__icon_category_all"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_user_homepage_photo_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_brn"
+                    android:text="请点击登录"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flight_ic_right_arrow_white" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_brn"
+                android:background="@color/common_mei_tuan">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/my_id_brn"
+                    android:gravity="center"
+                    android:padding="@dimen/my_id_size">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_user_head_coupon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="美团卷"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1px"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/my_id_brn"
+                    android:gravity="center"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_user_head_review" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="评价"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1px"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/my_id_brn"
+                    android:gravity="center"
+                    android:padding="@dimen/my_id_size">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_user_head_favorite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="收藏"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/my_id_size"
+                android:background="@color/mei_tuan_wire" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/favorable_button"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/my_order_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_global_user_membercard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/my_order_img"
+                    android:text="我的订单" />
+
+                <ImageView
+                    android:id="@+id/all_order_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/apollo_ic_arrow_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/all_order_img"
+                    android:text="查看全部订单" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/order_unpaid"
+                    android:gravity="center"
+                    android:padding="@dimen/after_sale_size"
+                    android:text="待付款" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/order_unused"
+                    android:gravity="center"
+                    android:padding="@dimen/after_sale_size"
+                    android:text="待使用" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/order_needfeedback"
+                    android:gravity="center"
+                    android:padding="@dimen/after_sale_size"
+                    android:text="待评价" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/order_refund"
+                    android:gravity="center"
+                    android:padding="@dimen/after_sale_size"
+                    android:text="退款/售后" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/my_id_size"
+                android:background="@color/mei_tuan_wire" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_global_user_wallet"
+                    android:drawableRight="@drawable/apollo_ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="   我的钱包" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="46dp"
+                    android:background="@color/mei_tuan_wire" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/favorable_button"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_global_user_voucher"
+                    android:drawableRight="@drawable/apollo_ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="   抵用卷" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/my_id_size"
+                android:background="@color/mei_tuan_wire" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/favorable_button"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_global_user_recommend"
+                android:drawableRight="@drawable/apollo_ic_arrow_right"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="   竟日推荐" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/my_id_size"
+                android:background="@color/mei_tuan_wire" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/favorable_button"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_global_user_feedback"
+                android:drawableRight="@drawable/apollo_ic_arrow_right"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="   抵用卷" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/my_id_size"
+                android:background="@color/mei_tuan_wire" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/favorable_button"
+                android:clickable="true"
+                android:layout_marginBottom="@dimen/my_id_size"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/my_cooperation_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_global_user_cooperation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/my_cooperation_img"
+                    android:text="我的订单" />
+
+                <ImageView
+                    android:id="@+id/all_cooperation_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/apollo_ic_arrow_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/all_cooperation_img"
+                    android:text="查看全部订单" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mei_tuan_wire" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
